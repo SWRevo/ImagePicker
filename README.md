@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/SWRevo/ImagePicker.svg)](https://jitpack.io/#SWRevo/ImagePicker)
+
 # ImagePicker
 Android custom photo album, completely imitating the WeChat UI, realizes the functions of taking pictures, picture selection (single selection/multiple selection), cropping, rotation, etc.
 
@@ -17,8 +19,19 @@ This project references：
 ## 1.Usage
 
 Before use, for Android Studio users, you can choose to add:
+
 ```java
-	implementation 'com.lzy.widget:imagepicker:0.6.1'  //Specify version
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+
+```java
+	implementation 'com.github.SWRevo:ImagePicker:1.1.0'
 ```
 
 ## 2.Function and parameter meaning
@@ -43,7 +56,7 @@ Before use, for Android Studio users, you can choose to add:
 
 For more use, please download the demo to see the source code
 
-1. First you need to inherit `com.lzy.imagepicker.loader.ImageLoader` This interface implements the methods in it, for example, the following code is used `Picasso` Implemented by the three-party loading library
+1. First you need to inherit `id.indosw.imagepicker.loader.ImageLoader` This interface implements the methods in it, for example, the following code is used `Picasso` Implemented by the three-party loading library
 ```java
 public class PicassoImageLoader implements ImageLoader {
 
