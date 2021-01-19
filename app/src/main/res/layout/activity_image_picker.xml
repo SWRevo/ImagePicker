@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0d7360"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="ImageLoader"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0d7360"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_uil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UIL"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rb_glide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Glide"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rb_picasso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Picasso"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rb_fresco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="Fresco"
+                        android:textColor="#000000"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rb_xutils3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xUtils3"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rb_xutils"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xUtils"
+                        tools:ignore="HardcodedText" />
+                </RadioGroup>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bf2f2f"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Select Mode"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_single_select"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Single Select"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rb_muti_select"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Multi Select"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#bf2f2f"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selectLimit"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_select_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/sb_select_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6476ed"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_show_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show camera"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/cb_crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_isSaveRectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6476ed"
+            android:text="Whether to save the cropped picture in a rectangular area"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6476ed"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_crop_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectangle"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/et_crop_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Width"
+                android:inputType="number"
+                android:minWidth="50dp"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/et_crop_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:inputType="number"
+                android:minWidth="50dp"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rb_crop_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Round"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/et_crop_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Radius"
+                android:inputType="number"
+                android:minWidth="50dp"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6476ed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture save width:"
+                android:textColor="#000"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/et_outputx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Width"
+                android:inputType="number"
+                android:minWidth="50dp"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picture save high:"
+                android:textColor="#000"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/et_outputy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:inputType="number"
+                android:minWidth="50dp"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_open_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Gallery"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/testImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription" />
+
+        <com.lzy.widget.ExpandGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:verticalSpacing="4dp"/>
+
+        <Button
+            android:id="@+id/btn_wxDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fully imitated WeChat Demo"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
